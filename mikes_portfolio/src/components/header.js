@@ -2,6 +2,11 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import mvLogo from "../assets/icons/mv-logo.svg"
+import github from "../assets/icons/github.svg"
+import linkedin from "../assets/icons/linkedin.svg"
+import twitter from "../assets/icons/twitter.svg"
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
@@ -9,24 +14,24 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+    <div className="nav-bar">
+      <div className="logo-container">
+        <img src={mvLogo} />
+      </div>
+      <div className="nav-links-container">
+        <a href="">
+          <img src={github} />
+        </a>
+        <a href="">
+          <img src={linkedin} />
+        </a>
+        <a href="">
+          <img src={twitter} />
+        </a>
+        <a href="">ABOUT</a>
+        <a href="">WORK</a>
+        <a href="">CONTACT</a>
+      </div>
     </div>
   </header>
 )
