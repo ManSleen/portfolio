@@ -8,12 +8,7 @@ import linkedin from "../assets/icons/linkedin.svg"
 import twitter from "../assets/icons/twitter.svg"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header>
     <div className="nav-bar">
       <div className="logo-container">
         <img src={mvLogo} />
