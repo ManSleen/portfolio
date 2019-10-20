@@ -13,7 +13,7 @@ const Header = ({ siteTitle }) => (
       <div className="logo-container">
         <img src={mvLogo} />
       </div>
-      <div className="nav-links-container">
+      <div className={`nav-links-container`}>
         <a href="">
           <img src={github} />
         </a>
