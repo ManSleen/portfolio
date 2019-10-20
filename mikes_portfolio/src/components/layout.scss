@@ -220,7 +220,6 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 h1 {
   margin-left: 0;
@@ -830,7 +829,7 @@ pre tt:after {
   justify-content: flex-start;
   width: 100%;
   align-items: center;
-  .projet-container {
+  .project-container {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
@@ -841,7 +840,7 @@ pre tt:after {
       font-size: 4rem;
       line-height: 82px;
       color: #0b0d0d;
-      margin: 0;
+      margin-bottom: 15px;
     }
     h4 {
       font-family: Playfair Display;
@@ -851,6 +850,7 @@ pre tt:after {
       line-height: 36px;
       letter-spacing: 0.03em;
       color: #0b0d0d;
+      margin-bottom: 40px;
     }
     p {
       font-family: Lato;
@@ -860,6 +860,7 @@ pre tt:after {
       line-height: 200%;
       letter-spacing: 0.01em;
       color: #0b0d0d;
+      margin-bottom: 40px;
     }
     a {
       text-decoration: none;
@@ -878,19 +879,35 @@ pre tt:after {
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
+      align-items: center;
+      a {
+        &:hover {
+          margin-left: 10px;
+          opacity: 0.7;
+          transition: margin-left 200ms ease;
+        }
+      }
+      img {
+        margin-left: 10px;
+      }
     }
     .work-left {
       width: 50%;
+      margin: 0;
+      padding: 0;
+      height: 100%;
     }
     .work-right {
       width: 50%;
+      margin: 0;
+      padding: 0;
     }
     .project-info {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: space-around;
-      width: 70%;
+      width: 65%;
       height: 100%;
       margin: 0 auto;
     }
