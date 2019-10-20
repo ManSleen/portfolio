@@ -15,7 +15,8 @@ const AboutMe = () => {
         <p>
           I develop the web and I love hot sauce. Call me weird, but I've always
           enjoyed getting down with technology. As a kid I tore apart the family
-          computer and made plain HTML websites with Notepad. Now, as an adult
+          computer and made plain HTML websites with Notepad. Now, as an{" "}
+          <span> adult </span>
           slightly larger kid, I'm finding the web is the perfect place for me
           to get real weird.
         </p>
