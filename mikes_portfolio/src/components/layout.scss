@@ -673,35 +673,39 @@ pre tt:after {
   z-index: 1;
   padding: 19rem 0;
   color: white;
+  img {
+    width: 60px;
+    transform: rotate(12deg);
+  }
   .earth {
     position: absolute;
-    left: 20%;
-    top: 22%;
+    left: 290px;
+    top: 160px;
   }
   .sparkles {
     position: absolute;
-    left: 48%;
-    top: 11%;
+    left: 900px;
+    top: 120px;
   }
   .bacon {
     position: absolute;
-    right: 25%;
-    top: 22%;
+    right: 380px;
+    top: 180px;
   }
   .joystick {
     position: absolute;
-    right: 12%;
-    top: 50%;
+    right: 200px;
+    top: 490px;
   }
   .em {
     position: absolute;
-    left: 8%;
-    top: 50%;
+    left: 120px;
+    top: 480px;
   }
   .wrench {
     position: absolute;
-    left: 18%;
-    bottom: 14%;
+    left: 300px;
+    bottom: 120px;
   }
   .snowboard {
     position: absolute;
@@ -710,8 +714,9 @@ pre tt:after {
   }
   .floppy {
     position: absolute;
-    right: 22%;
-    bottom: 14%;
+
+    right: 430px;
+    bottom: 130px;
   }
   .name-container {
     width: 42%;
@@ -784,11 +789,12 @@ pre tt:after {
     }
     .thumbs-up {
       width: 80px;
+      margin: 20px 0;
     }
   }
   .about-me-image {
     img {
-      height: 1200px;
+      height: 1400px;
       filter: drop-shadow(30px 20px 20px rgba(0, 0, 0, 0.1));
     }
   }
@@ -912,4 +918,9 @@ pre tt:after {
       margin: 0 auto;
     }
   }
+}
+
+.contact-container {
+  width: 50%;
+  margin: 0 auto;
 }

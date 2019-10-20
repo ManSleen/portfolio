@@ -15,6 +15,7 @@ import Intro from "./Intro"
 import AboutMe from "./AboutMe"
 import RecentWork from "./RecentWork"
 import Work from "./Work"
+import Contact from "./Contact"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,6 +36,7 @@ const Layout = ({ children }) => {
       <AboutMe />
       <RecentWork />
       <Work />
+      <Contact />
     </>
   )
 }
