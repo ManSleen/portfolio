@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Muli:700,900|Playfair+Display|Rock+Salt&display=swap");
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -622,14 +624,109 @@ pre tt:after {
 }
 
 .nav-bar {
-  max-width: 90%;
+  position: fixed;
+  z-index: 99;
+  width: 90%;
   color: white;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.45rem 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   img {
     margin: 0;
+  }
+  .nav-links-container {
+    width: 30%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: white;
+      text-decoration: none;
+      font-family: Muli;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 0.6rem;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.12em;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.Intro-container {
+  height: 100vh;
+  width: 100%;
+  background: #0b0d0d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 19rem 0;
+  color: white;
+  .earth {
+    position: absolute;
+    left: 20%;
+    top: 22%;
+  }
+  .sparkles {
+    position: absolute;
+    left: 48%;
+    top: 11%;
+  }
+  .bacon {
+    position: absolute;
+    right: 25%;
+    top: 22%;
+  }
+  .joystick {
+    position: absolute;
+    right: 12%;
+    top: 50%;
+  }
+  .em {
+    position: absolute;
+    left: 8%;
+    top: 50%;
+  }
+  .wrench {
+    position: absolute;
+    left: 18%;
+    bottom: 14%;
+  }
+  .snowboard {
+    position: absolute;
+    left: 48%;
+    bottom: 6%;
+  }
+  .floppy {
+    position: absolute;
+    right: 22%;
+    bottom: 14%;
+  }
+  .name-container {
+    width: 42%;
+    margin: 0 auto;
+    h1 {
+      font-family: "Rock Salt", cursive;
+      color: #efefef;
+      font-size: 5rem;
+      font-weight: 400;
+      margin: 2.8rem 0;
+    }
+    h3 {
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      font-size: 2rem;
+      color: #efefef;
+    }
   }
 }
