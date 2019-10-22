@@ -2,9 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useEffect, useState } from "react"
 
-import mvLogo from "../assets/icons/mv-logo.svg"
-
-import twitter from "../assets/icons/twitter.svg"
 import LinkedIn from "../assets/icons/LinkedIn"
 import GitHub from "../assets/icons/GitHub"
 import Twitter from "../assets/icons/Twitter"
