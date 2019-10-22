@@ -14,7 +14,7 @@ const Work = () => {
         </div>
         <div className="work-right">
           <div className="project-info">
-            <h3>How-To</h3>
+            <h2>How-To</h2>
             <h4>React.js Web App</h4>
             <p>
               Tumblr bicycle rights kickstarter celiac viral air plant jianbing
@@ -31,7 +31,7 @@ const Work = () => {
       <div className="project-container">
         <div className="work-right">
           <div className="project-info">
-            <h3>Replate</h3>
+            <h2>Replate</h2>
             <h4>React.js Web App</h4>
             <p>
               Tumblr bicycle rights kickstarter celiac viral air plant jianbing
@@ -54,7 +54,7 @@ const Work = () => {
         </div>
         <div className="work-right">
           <div className="project-info">
-            <h3>DesignHub</h3>
+            <h2>DesignHub</h2>
             <h4>React.js Web App</h4>
             <p>
               Tumblr bicycle rights kickstarter celiac viral air plant jianbing

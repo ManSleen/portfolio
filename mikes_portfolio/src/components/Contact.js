@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="contact-container">
       <img src={phone} />
       <h2>Contact</h2>
-      <h3>Reach me by phone, email or carrier pigeon</h3>
+      <h4>Reach me by phone, email or carrier pigeon</h4>
       <div className="contact-info-container">
         <img className="phone" src={contactPhone} />
         <p>(786) 286-8944</p>

@@ -8,7 +8,7 @@ const RecentWork = () => {
     <div className="recent-work-container">
       <img src={hammer} />
       <h2>Recent Work</h2>
-      <p>What I’ve been working on lately</p>
+      <h4>What I’ve been working on lately</h4>
       <img className="down-arrow bounce" src={down} />
     </div>
   )

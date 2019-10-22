@@ -20,10 +20,12 @@ const AboutMe = () => {
           slightly larger kid, I'm finding the web is the perfect place for me
           to get real weird.
         </p>
-        <img class="web-tech" src={html5} />
-        <img class="web-tech" src={javascript} />
-        <img class="web-tech" src={react} />
-        <img class="web-tech" src={css3} />
+        <div className="web-tech-container">
+          <img class="web-tech" src={html5} />
+          <img class="web-tech" src={javascript} />
+          <img class="web-tech" src={react} />
+          <img class="web-tech" src={css3} />
+        </div>
       </div>
       <div className="about-me-image">
         <img src={srirachaMike} />
