@@ -25,23 +25,23 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header>
-      <div className={`nav-bar${scrollPosition > 800 ? " inverse" : ""}`}>
+      <div className={`nav-bar${scrollPosition > 860 ? " inverse" : ""}`}>
         <div className="logo-container">
           <MVLogo
-            color={`${scrollPosition > 800 ? "#0b0d0d" : "white"}`}
+            color={`${scrollPosition > 860 ? "#0b0d0d" : "white"}`}
             size="80"
           />
         </div>
         <div className={`nav-links-container`}>
           <a href="">
             {/* <img className="svg" src={github} /> */}
-            <GitHub color={`${scrollPosition > 800 ? "#0b0d0d" : "white"}`} />
+            <GitHub color={`${scrollPosition > 860 ? "#0b0d0d" : "white"}`} />
           </a>
           <a href="">
-            <LinkedIn color={`${scrollPosition > 800 ? "#0b0d0d" : "white"}`} />
+            <LinkedIn color={`${scrollPosition > 860 ? "#0b0d0d" : "white"}`} />
           </a>
           <a href="">
-            <Twitter color={`${scrollPosition > 800 ? "#0b0d0d" : "white"}`} />
+            <Twitter color={`${scrollPosition > 860 ? "#0b0d0d" : "white"}`} />
           </a>
           <a href="">ABOUT</a>
           <a href="">WORK</a>
