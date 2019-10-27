@@ -21,10 +21,10 @@ const AboutMe = () => {
           to get real weird.
         </p>
         <div className="web-tech-container">
-          <img class="web-tech" src={html5} />
-          <img class="web-tech" src={javascript} />
-          <img class="web-tech" src={react} />
-          <img class="web-tech" src={css3} />
+          <img className="web-tech" src={html5} />
+          <img className="web-tech" src={javascript} />
+          <img className="web-tech" src={react} />
+          <img className="web-tech" src={css3} />
         </div>
       </div>
       <div className="about-me-image">
