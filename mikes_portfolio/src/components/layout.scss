@@ -852,7 +852,7 @@ h4 {
       justify-content: flex-start;
       align-items: center;
       a {
-        transition: margin-left 200ms ease;
+        transition: margin-left 200ms ease, opacity 200ms ease;
         &:hover {
           margin-left: 10px;
           opacity: 0.7;
@@ -873,8 +873,11 @@ h4 {
       }
       img {
         vertical-align: bottom;
-        transition: transform 200ms ease;
+        transition: opacity 200ms ease, transform 200ms ease;
+
+        opacity: 0.8;
         &:hover {
+          opacity: 1;
           transform: scale(1.1);
           cursor: pointer;
         }
@@ -962,8 +965,9 @@ h4 {
 
 .nav-bar.inverse {
   padding: 0.4rem 0;
-  transition: padding 200ms ease-in-out;
+
   .logo-container {
+    transition: transform 200ms ease;
     svg {
       transform: scale(0.7);
     }
