@@ -19,7 +19,6 @@ const Header = ({ siteTitle }) => {
 
   const handleScroll = e => {
     let scrollTop = window.scrollY
-    console.log(scrollTop)
     setScrollPosition(scrollTop)
   }
 
