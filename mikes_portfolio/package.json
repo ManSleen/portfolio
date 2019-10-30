@@ -19,7 +19,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "@hot-loader/react-dom": "^16.10.2",
+    "react-hot-loader": "^4.12.15"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
