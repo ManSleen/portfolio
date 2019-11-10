@@ -42,18 +42,22 @@ const Work = () => {
               them migas poke.{" "}
             </p>
             <div className="more-info">
-              <a href="">MORE INFO</a>
+              <Link to="/replate">MORE INFO</Link>
               <img src={rightArrow} />
             </div>
           </div>
         </div>
         <div className="work-left">
-          <img src={replateCover} />
+          <Link to="/replate">
+            <img src={replateCover} />
+          </Link>
         </div>
       </div>
       <div className="project-container">
         <div className="work-left">
-          <img src={designHubCover} />
+          <Link to="/designhub">
+            <img src={designHubCover} />
+          </Link>
         </div>
         <div className="work-right">
           <div className="project-info">
@@ -65,7 +69,7 @@ const Work = () => {
               them migas poke.{" "}
             </p>
             <div className="more-info">
-              <a href="">MORE INFO</a>
+              <Link to="/designhub">MORE INFO</Link>
               <img src={rightArrow} />
             </div>
           </div>
