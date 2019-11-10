@@ -568,8 +568,16 @@ p {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+
   img {
     margin: 0;
+  }
+  .logo-container {
+    transition: transform 200ms ease;
+    &:hover {
+      // opacity: 0.7;
+      transform: scale(1.2);
+    }
   }
   .nav-links-container {
     width: 30vw;
@@ -1174,7 +1182,7 @@ p {
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
-      margin: 80px 0;
+      margin: 140px 0;
       .color {
         width: 10rem;
         height: 10rem;
@@ -1217,6 +1225,10 @@ p {
         background: white;
         box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
         padding: 40px 80px;
+
+        img {
+          margin: 40px 0 40px -15px;
+        }
         h6 {
           font-family: Roboto;
           font-style: normal;
@@ -1235,5 +1247,73 @@ p {
         width: 40%;
       }
     }
+
+    .prototype-container {
+      margin: 80px auto;
+      iframe {
+        margin: 0 auto;
+        width: 100%;
+        height: 1100px;
+        border: none;
+      }
+    }
+
+    .how-to-screens {
+      margin: 150px auto;
+    }
+
+    .project-logo-container {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+.previous-next {
+  background: white;
+  height: 300px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 88px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+
+  h6 {
+    color: #0b0d0d;
+    font-size: calc(20px + (50 - 20) * ((100vw - 1000px) / (1600 - 1000)));
+    font-family: Muli;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: -0.15rem;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+  }
+  h4 {
+    margin: 0 0 30px 0;
+  }
+  a {
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+    transition: transform 200ms ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  .previous,
+  .next {
+    width: 100%;
+    height: 100%;
+    padding: 0 120px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .previous {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: right;
   }
 }

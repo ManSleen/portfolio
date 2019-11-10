@@ -26,10 +26,12 @@ const Header = ({ siteTitle }) => {
     <header>
       <div className={`nav-bar${scrollPosition > 860 ? " inverse" : ""}`}>
         <div className="logo-container">
-          <MVLogo
-            color={`${scrollPosition > 860 ? "#0b0d0d" : "white"}`}
-            size="80"
-          />
+          <Link to="/">
+            <MVLogo
+              color={`${scrollPosition > 860 ? "#0b0d0d" : "white"}`}
+              size="80"
+            />
+          </Link>
         </div>
         <div className={`nav-links-container`}>
           <a href="">
