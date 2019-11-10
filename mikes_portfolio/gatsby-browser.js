@@ -1,7 +1,14 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+const scrollToElement = require("scroll-to-element")
 
-// You can delete this file if you're not using it
+exports.onRouteUpdate = ({ location }) => {
+  checkHash(location)
+}
+
+const checkHash = location => {
+  let { hash } = location
+  if (hash) {
+    scrollToElement(hash, {
+      duration: 1000,
+    })
+  }
+}

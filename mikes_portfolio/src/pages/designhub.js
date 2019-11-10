@@ -24,20 +24,7 @@ const HowTo = () => {
           <div className="intro-text">
             <h2>DesignHub</h2>
             <h4>React.js Web App</h4>
-            <p>
-              Replate is an app designed to help reduce food waste by making it
-              easy to donate surplus food to people in need. Users are guided
-              through a sign-up process where they can choose to create a
-              Business account or a Volunteer account. Business accounts have
-              the ability to post and edit food pickups. Volunteer accounts can
-              claim food pickups that they want to receive.
-              <br />
-              <br />
-              The app utilizes React as it’s front-end framework and handles
-              state management using Redux. Node and Express were used to create
-              the app’s backend and API. The app’s database was created using
-              PostgreSQL .
-            </p>
+            <p>DesignHub was created to</p>
           </div>
           <div className="details">
             <h5>Tech Stack</h5>
@@ -81,12 +68,29 @@ const HowTo = () => {
             <div className="links-container">
               <h5>Links</h5>
               <div className="link">
-                <img className="links-earth" src={earthBW} />
-                <p>Live Demo</p>
+                <a
+                  href="https://github.com/ManSleen/designhub-fe"
+                  target="_blank"
+                >
+                  <img className="links-earth" src={earthBW} />
+                </a>
+                <a href="https://designhubx.com/" target="_blank">
+                  <p>Live App</p>
+                </a>
               </div>
               <div className="link">
-                <GitHub color="black" />
-                <p>GitHub Repo</p>
+                <a
+                  href="https://github.com/lambda-replate/Lambda-Replate-FE"
+                  target="_blank"
+                >
+                  <GitHub color="black" />
+                </a>
+                <a
+                  href="https://github.com/lambda-replate/Lambda-Replate-FE"
+                  target="_blank"
+                >
+                  <p>GitHub Repo</p>
+                </a>
               </div>
             </div>
           </div>

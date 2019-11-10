@@ -28,7 +28,7 @@ const HowTo = () => {
               How-To is an app that makes it easy to browse and create tutorials
               or “how-to” guides. After a quick and simple sign-up procedure,
               users can immediately begin creating their own guides. Users are
-              able to fill in their guide’s info, upload images, and add
+              able to fill in their guide’s info, upload images, and add guide
               instructions from their personalized user dashboard.
               <br />
               <br /> The app utilizes React as it’s front-end framework and
@@ -58,9 +58,6 @@ const HowTo = () => {
               </div>
               <div className="tech aws">
                 <p>AWS S3</p>
-              </div>
-              <div className="tech twilio">
-                <p>Twilio</p>
               </div>
             </div>
             <hr />
@@ -105,6 +102,9 @@ const HowTo = () => {
           </div>
         </div>
         <div className="project-design-container">
+          <div className="how-to-screens">
+            <img src={howToScreens} />
+          </div>
           <h6>Design</h6>
           <p>
             The How-To app was designed with a mobile-first mentality. I first
@@ -150,9 +150,7 @@ const HowTo = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="how-to-screens">
-            <img src={howToScreens} />
-          </div>
+
           <div className="project-logo-container">
             <img src={hammerWrench} />
           </div>
