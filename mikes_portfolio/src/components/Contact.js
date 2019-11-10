@@ -5,19 +5,26 @@ import message from "../assets/icons/message.svg"
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-      <img src={phone} />
-      <h2>Contact</h2>
-      <h4>Reach me by phone, email or carrier pigeon</h4>
-      <div className="contact-info-container">
-        <img className="phone" src={contactPhone} />
-        <p>(786) 286-8944</p>
+    <>
+      <a className="contact-anchor" id="contact"></a>
+      <div className="contact-container">
+        <img src={phone} />
+        <h2>Contact</h2>
+        <h4>Reach me by phone, email or carrier pigeon</h4>
+        <div className="contact-info-container">
+          <a href="tel:1-786-286-8944">
+            <img className="phone" src={contactPhone} />
+            <p>(786) 286-8944</p>
+          </a>
+        </div>
+        <div className="contact-info-container">
+          <a href="mailto:mike.vansleen@gmail.com" target="_blank">
+            <img className="message" src={message} />
+            <p>mike.vansleen@gmail.com</p>
+          </a>
+        </div>
       </div>
-      <div className="contact-info-container">
-        <img className="message" src={message} />
-        <p>mike.vansleen@gmail.com</p>
-      </div>
-    </div>
+    </>
   )
 }
 

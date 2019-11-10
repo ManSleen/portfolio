@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@hot-loader/react-dom": "^16.10.2",
     "gatsby": "^2.16.1",
     "gatsby-cli": "^2.8.3",
     "gatsby-image": "^2.2.29",
@@ -20,8 +21,8 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
-    "@hot-loader/react-dom": "^16.10.2",
-    "react-hot-loader": "^4.12.15"
+    "react-hot-loader": "^4.12.15",
+    "scroll-to-element": "^2.0.3"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
