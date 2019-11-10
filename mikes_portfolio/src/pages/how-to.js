@@ -1,8 +1,16 @@
 import React from "react"
+import { Link } from "gatsby"
 import Header from "../components/header"
 
 import earthBW from "../assets/icons/earth-bw.svg"
 import GitHub from "../assets/icons/GitHub.js"
+import arrowRight from "../assets/icons/arrow-right.svg"
+import arrowLeft from "../assets/icons/arrow-left.svg"
+
+import howToFonts from "../images/roboto.svg"
+import howToUIElements from "../images/how-to-ui-elements.svg"
+import howToScreens from "../images/how-to-iphone-screens.svg"
+import hammerWrench from "../images/hammer-wrench.svg"
 
 const HowTo = () => {
   return (
@@ -26,7 +34,8 @@ const HowTo = () => {
               <br /> The app utilizes React as it’s front-end framework and
               handles state management using Redux. Node and Express were used
               to create the app’s backend and API. The app’s database was
-              created using PostgreSQL
+              created using PostgreSQL. Images are uploaded using an AWS S3
+              storage bucket.
             </p>
           </div>
           <div className="details">
@@ -57,6 +66,9 @@ const HowTo = () => {
             <hr />
             <div className="project-details-container">
               <h5>Details</h5>
+              <p>
+                <span>Completed: </span>OCT 2019
+              </p>
               <p>
                 <span>Project Duration: </span>2 Weeks
               </p>
@@ -109,12 +121,52 @@ const HowTo = () => {
           <div className="fonts-ui-container">
             <div className="card fonts-container">
               <h6>Fonts</h6>
+              <img src={howToFonts} />
             </div>
             <div className="card ui-container">
               <h6>UI Elements</h6>
+              <img src={howToUIElements} />
             </div>
           </div>
+          <div className="prototype-container">
+            <h6>Prototype</h6>
+            <iframe
+              height="600"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FH2RlU96r30K3HM0cC4ETMw%2FHow-To-UI-Design%3Fnode-id%3D23%253A1115%26viewport%3D-397%252C139%252C1.008410096168518%26scaling%3Dscale-down"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="how-to-screens">
+            <img src={howToScreens} />
+          </div>
+          <div className="project-logo-container">
+            <img src={hammerWrench} />
+          </div>
         </div>
+      </div>
+      <div className="previous-next">
+        <Link to="/replate">
+          <div className="previous">
+            <div>
+              <img src={arrowLeft} />
+            </div>
+            <div>
+              <h4>Previous</h4>
+              <h6>DesignHub</h6>
+            </div>
+          </div>
+        </Link>
+        <Link to="/replate">
+          <div className="next">
+            <div>
+              <h4>Next</h4>
+              <h6>Replate</h6>
+            </div>
+            <div>
+              <img src={arrowRight} />
+            </div>
+          </div>
+        </Link>
       </div>
     </>
   )

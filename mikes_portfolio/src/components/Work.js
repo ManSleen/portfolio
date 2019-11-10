@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import howToCover from "../images/how-to-cover.png"
 import replateCover from "../images/replate-cover.png"
@@ -10,7 +11,9 @@ const Work = () => {
     <div className="work-container">
       <div className="project-container">
         <div className="work-left">
-          <img src={howToCover} />
+          <Link to="/how-to">
+            <img src={howToCover} />
+          </Link>
         </div>
         <div className="work-right">
           <div className="project-info">
@@ -22,7 +25,7 @@ const Work = () => {
               them migas poke.{" "}
             </p>
             <div className="more-info">
-              <a href="">MORE INFO</a>
+              <Link to="/how-to">MORE INFO</Link>
               <img src={rightArrow} />
             </div>
           </div>
