@@ -1031,6 +1031,30 @@ p {
   background-position: center center;
 }
 
+.replate-header {
+  background: linear-gradient(
+      180deg,
+      rgba(26, 26, 26, 0.58) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    no-repeat url("../images/replate-cover-large.jpg");
+
+  background-size: cover;
+  background-position: center center;
+}
+
+.designhub-header {
+  background: linear-gradient(
+      180deg,
+      rgba(26, 26, 26, 0.58) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    no-repeat url("../images/designhub-cover.png");
+
+  background-size: cover;
+  background-position: center center;
+}
+
 .project-description-container {
   margin: 120px auto;
   width: 75%;
@@ -1125,6 +1149,10 @@ p {
           line-height: 25px;
           font-weight: bold;
         }
+        a {
+          vertical-align: middle;
+          height: 25px;
+        }
       }
       .tech {
         box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
@@ -1215,6 +1243,33 @@ p {
       .how-to-black {
         background: #171717;
       }
+      .replate-green {
+        background: #4cb050;
+      }
+      .replate-blue {
+        background: #3066be;
+      }
+      .replate-black {
+        background: #272d2d;
+      }
+      .replate-red {
+        background: #c94e3e;
+      }
+      .designhub-black {
+        background: #15161a;
+      }
+      .designhub-grey {
+        background: #6d6d72;
+      }
+      .designhub-blue {
+        background: #5557fe;
+      }
+      .designhub-purple {
+        background: #9555fe;
+      }
+      .designhub-gradient {
+        background: linear-gradient(91.72deg, #5557fe -2.36%, #9555fe 103.67%);
+      }
     }
     .fonts-ui-container {
       display: flex;
@@ -1227,7 +1282,7 @@ p {
         padding: 40px 80px;
 
         img {
-          margin: 40px 0 40px -15px;
+          margin: 60px 0 40px -15px;
         }
         h6 {
           font-family: Roboto;
@@ -1250,6 +1305,7 @@ p {
 
     .prototype-container {
       margin: 80px auto;
+
       iframe {
         margin: 0 auto;
         width: 100%;
@@ -1260,6 +1316,11 @@ p {
 
     .how-to-screens {
       margin: 150px auto;
+      iframe {
+        margin: 0 auto;
+
+        border: none;
+      }
     }
 
     .project-logo-container {

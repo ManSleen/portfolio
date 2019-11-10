@@ -10,19 +10,19 @@ import arrowLeft from "../assets/icons/arrow-left.svg"
 import replateFonts from "../images/replate-fonts.svg"
 import replateUIElements from "../images/replate-ui-elements.svg"
 import howToScreens from "../images/how-to-iphone-screens.svg"
-import salad from "../images/salad.svg"
+import designHubLogo from "../images/designhub-logo.svg"
 
 const HowTo = () => {
   return (
     <>
       <Header />
-      <div className="project-header replate-header">
-        <h1>Replate</h1>
+      <div className="project-header designhub-header ">
+        <h1>DesignHub</h1>
       </div>
       <div className="project-description-container">
         <div className="project-intro-container">
           <div className="intro-text">
-            <h2>Replate</h2>
+            <h2>DesignHub</h2>
             <h4>React.js Web App</h4>
             <p>
               Replate is an app designed to help reduce food waste by making it
@@ -57,44 +57,36 @@ const HowTo = () => {
               <div className="tech express">
                 <p>Express</p>
               </div>
+              <div className="tech aws">
+                <p>AWS S3</p>
+              </div>
+              <div className="tech twilio">
+                <p>Twilio</p>
+              </div>
             </div>
             <hr />
             <div className="project-details-container">
               <h5>Details</h5>
               <p>
-                <span>Completed: </span>JUNE 2019
+                <span>Completed: </span>Nov 2019
               </p>
               <p>
-                <span>Project Duration: </span>5 Days
+                <span>Project Duration: </span>8 Weeks
               </p>
               <p>
-                <span>Role: </span>UI/UX, Front End
+                <span>Role: </span>Front End, Back End
               </p>
             </div>
             <hr />
             <div className="links-container">
               <h5>Links</h5>
               <div className="link">
-                <a href="https://replate-app.netlify.com/" target="_blank">
-                  <img className="links-earth" src={earthBW} />
-                </a>
-                <a href="https://replate-app.netlify.com/" target="_blank">
-                  <p>Live Demo</p>
-                </a>
+                <img className="links-earth" src={earthBW} />
+                <p>Live Demo</p>
               </div>
               <div className="link">
-                <a
-                  href="https://github.com/lambda-replate/Lambda-Replate-FE"
-                  target="_blank"
-                >
-                  <GitHub color="black" />
-                </a>
-                <a
-                  href="https://github.com/lambda-replate/Lambda-Replate-FE"
-                  target="_blank"
-                >
-                  <p>GitHub Repo</p>
-                </a>
+                <GitHub color="black" />
+                <p>GitHub Repo</p>
               </div>
             </div>
           </div>
@@ -107,17 +99,20 @@ const HowTo = () => {
             throughout the app.
           </p>
           <div className="colors-container">
-            <div className="color replate-green">
-              <p>#4CB050</p>
+            <div className="color designhub-black">
+              <p>#15161A</p>
             </div>
-            <div className="color replate-blue">
-              <p>#3066BE</p>
+            <div className="color designhub-grey ">
+              <p>#6D6D72</p>
             </div>
-            <div className="color replate-black">
-              <p>#272D2D</p>
+            <div className="color designhub-blue">
+              <p>#5557FE</p>
             </div>
-            <div className="color replate-red">
-              <p>#C94E3E</p>
+            <div className="color designhub-purple">
+              <p>#9555FE</p>
+            </div>
+            <div className="color designhub-gradient">
+              <p>GRADIENT</p>
             </div>
           </div>
           <div className="fonts-ui-container">
@@ -132,30 +127,37 @@ const HowTo = () => {
           </div>
 
           <div className="how-to-screens">
-            {/* <img src={howToScreens} /> */}
+            <iframe
+              width="1280"
+              height="720"
+              src="https://www.youtube.com/embed/PTBgNKuqSsY"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
           <div className="project-logo-container">
-            <img src={salad} />
+            <img src={designHubLogo} />
           </div>
         </div>
       </div>
       <div className="previous-next">
-        <Link to="/how-to">
+        <Link to="/replate">
           <div className="previous">
             <div>
               <img src={arrowLeft} />
             </div>
             <div>
               <h4>Previous</h4>
-              <h6>How-To</h6>
+              <h6>Replate</h6>
             </div>
           </div>
         </Link>
-        <Link to="/designhub">
+        <Link to="/how-to">
           <div className="next">
             <div>
               <h4>Next</h4>
-              <h6>DesignHub</h6>
+              <h6>How-To</h6>
             </div>
             <div>
               <img src={arrowRight} />
