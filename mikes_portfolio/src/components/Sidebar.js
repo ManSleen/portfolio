@@ -4,7 +4,11 @@ import { slide as Menu } from "react-burger-menu"
 import { faHome, faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const Sidebar = () => {
+import LinkedIn from "../assets/icons/LinkedIn"
+import GitHub from "../assets/icons/GitHub"
+import Twitter from "../assets/icons/Twitter"
+
+const Sidebar = ({ scrollPosition, handleLinkClick }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const handleStateChange = state => {
@@ -22,39 +26,41 @@ const Sidebar = () => {
   return (
     <div className="nav-menu-container">
       <Menu
-        width={"100vw"}
+        width={"110vw"}
         right
-        customCrossIcon={<FontAwesomeIcon size="3x" icon={faTimes} />}
+        customCrossIcon={
+          <FontAwesomeIcon size="3x" icon={faTimes} color="white" />
+        }
         customBurgerIcon={false}
         isOpen={menuOpen}
         onStateChange={state => handleStateChange(state)}
       >
-        <Link onClick={() => closeMenu()} className="menu-item" to="/login">
-          Login
+        <a href="https://github.com/ManSleen" target="_blank">
+          {/* <img className="svg" src={github} /> */}
+          <GitHub color="white" />
+        </a>
+        <a href="https://www.linkedin.com/in/michael-vansleen/" target="_blank">
+          <LinkedIn color="white" />
+        </a>
+        <a href="https://twitter.com/man_sleen" target="_blank">
+          <Twitter color="white" />
+        </a>
+        <Link onClick={e => handleLinkClick(e, "#about")} to={"/#about"}>
+          ABOUT
         </Link>
-        <hr />
-        <Link onClick={() => closeMenu()} className="menu-item" to="/sign-up">
-          Sign Up
+        <Link onClick={e => handleLinkClick(e, "#work")} to={"/#work"}>
+          WORK
         </Link>
-        <hr />
-        <Link onClick={() => closeMenu()} className="menu-item" to="/profile">
-          My Profile
-        </Link>
-        <hr />
-        <Link onClick={() => closeMenu()} className="menu-item" to="/browse">
-          Browse Guides
-        </Link>
-        <hr />
-        <Link
-          onClick={() => closeMenu()}
-          className="menu-item"
-          to="/create-guide"
-        >
-          Create A Guide
+        <Link onClick={e => handleLinkClick(e, "#contact")} to={"/#contact"}>
+          CONTACT
         </Link>
       </Menu>
       <div onClick={() => toggleMenu()} className="nav-menu-button">
-        <FontAwesomeIcon size="lg" icon={faBars} color="white" />
+        <FontAwesomeIcon
+          size="lg"
+          icon={faBars}
+          color={`${scrollPosition > 860 ? "#0b0d0d" : "white"}`}
+        />
       </div>
     </div>
   )

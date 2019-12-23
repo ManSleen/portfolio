@@ -569,7 +569,7 @@ p {
   justify-content: space-between;
   align-items: center;
   @media screen and (max-width: 500px) {
-    width: 90%;
+    width: 80%;
   }
   img {
     margin: 0;
@@ -587,6 +587,9 @@ p {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 500px) {
+      text-align: right;
+    }
     .mobile-menu-button {
       display: none;
       @media screen and (max-width: 500px) {
@@ -600,7 +603,8 @@ p {
       width: 50vw;
     }
     @media screen and (max-width: 500px) {
-      width: 80vw;
+      text-align: right;
+      justify-content: flex-end;
     }
     a {
       color: white;
@@ -616,6 +620,10 @@ p {
       &:hover {
         // opacity: 0.7;
         transform: scale(1.15);
+      }
+      @media screen and (max-width: 500px) {
+        text-align: right;
+        display: none;
       }
     }
   }
@@ -1026,6 +1034,9 @@ p {
   }
   a {
     color: black;
+    @media screen and (max-width: 500px) {
+      color: white;
+    }
   }
 }
 
@@ -1425,4 +1436,76 @@ p {
   position: relative;
   top: 100px;
   visibility: hidden;
+}
+
+#page-wrap {
+  text-align: center;
+
+  /* Prevent sidebar from showing a scrollbar on page */
+  overflow: auto;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 45px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+  .menu-item {
+    color: white;
+  }
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bm-item:visited {
+  color: white;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 30px !important;
+  width: 30px !important;
+  margin: 70px 45px 0 0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #000000;
+  padding: 5em 1.5em 3rem;
+  font-size: 2rem;
+  font-family: Roboto;
+  color: white;
+  height: auto !important;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #ffffff;
+
+  a {
+    color: white;
+    text-align: center !important;
+  }
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  bottom: 0;
+  right: -60px !important;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  display: none;
 }

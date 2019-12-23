@@ -70,7 +70,10 @@ const Header = ({ siteTitle }) => {
             CONTACT
           </Link>
           <div className="mobile-menu-button">
-            <Sidebar />
+            <Sidebar
+              handleLinkClick={handleLinkClick}
+              scrollPosition={scrollPosition}
+            />
           </div>
         </div>
       </div>
