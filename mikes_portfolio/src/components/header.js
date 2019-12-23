@@ -7,6 +7,7 @@ import LinkedIn from "../assets/icons/LinkedIn"
 import GitHub from "../assets/icons/GitHub"
 import Twitter from "../assets/icons/Twitter"
 import MVLogo from "../assets/icons/MVLogo"
+import Sidebar from "./Sidebar"
 
 const Header = ({ siteTitle }) => {
   const handleLinkClick = (e, target) => {
@@ -68,6 +69,12 @@ const Header = ({ siteTitle }) => {
           <Link onClick={e => handleLinkClick(e, "#contact")} to={"/#contact"}>
             CONTACT
           </Link>
+          <div className="mobile-menu-button">
+            <Sidebar
+              handleLinkClick={handleLinkClick}
+              scrollPosition={scrollPosition}
+            />
+          </div>
         </div>
       </div>
     </header>

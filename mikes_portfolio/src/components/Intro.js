@@ -13,7 +13,7 @@ const Intro = () => {
     <div className="Intro-container">
       <div className="name-container">
         <h1>Mike VanSleen</h1>
-        <h3>Full Stack Web Developer.</h3>
+        <h3>Full Stack Web Developer</h3>
       </div>
     </div>
   )

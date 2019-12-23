@@ -31,7 +31,7 @@ const Work = () => {
             </div>
           </div>
         </div>
-        <div className="project-container">
+        <div className="project-container reverse">
           <div className="work-right">
             <div className="project-info">
               <h2>Replate</h2>
