@@ -20,11 +20,9 @@ const Work = () => {
           <div className="work-right">
             <div className="project-info">
               <h2>How-To</h2>
-              <h4>React.js Web App</h4>
               <p>
-                Tumblr bicycle rights kickstarter celiac viral air plant
-                jianbing before they sold out microdosing you probably haven't
-                heard of them migas poke.{" "}
+                How-To is an app that makes it easy to browse and create
+                “how-to” guides.
               </p>
               <div className="more-info">
                 <Link to="/how-to">MORE INFO</Link>
@@ -37,11 +35,9 @@ const Work = () => {
           <div className="work-right">
             <div className="project-info">
               <h2>Replate</h2>
-              <h4>React.js Web App</h4>
               <p>
-                Tumblr bicycle rights kickstarter celiac viral air plant
-                jianbing before they sold out microdosing you probably haven't
-                heard of them migas poke.{" "}
+                Replate is an app designed to help reduce food waste by making
+                it easy to donate surplus food to people in need.
               </p>
               <div className="more-info">
                 <Link to="/replate">MORE INFO</Link>
@@ -63,12 +59,12 @@ const Work = () => {
           </div>
           <div className="work-right">
             <div className="project-info">
-              <h2>DesignHub</h2>
-              <h4>React.js Web App</h4>
+              <Link to="/designhub">
+                <h2>DesignHub</h2>
+              </Link>
               <p>
-                Tumblr bicycle rights kickstarter celiac viral air plant
-                jianbing before they sold out microdosing you probably haven't
-                heard of them migas poke.{" "}
+                DesignHub is a professional design platform and asset management
+                system.
               </p>
               <div className="more-info">
                 <Link to="/designhub">MORE INFO</Link>

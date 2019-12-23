@@ -22,20 +22,21 @@ const HowTo = () => {
       <div className="project-description-container">
         <div className="project-intro-container">
           <div className="intro-text">
-            <h2>How-To</h2>
-            <h4>React.js Web App</h4>
+            {/* <h2>Overview</h2> */}
+            {/* <h4>React.js Web App</h4> */}
             <p>
               How-To is an app that makes it easy to browse and create tutorials
-              or “how-to” guides. After a quick and simple sign-up procedure,
-              users can immediately begin creating their own guides. Users are
-              able to fill in their guide’s info, upload images, and add guide
-              instructions from their personalized user dashboard.
+              or “how-to” guides. Users are guided through a quick
+              sign-up/sign-in process before they can begin creating their own
+              guides. Users are able to fill in their guide’s info, upload
+              images, and add guide instructions from their personalized user
+              dashboard.
               <br />
               <br /> The app utilizes React as it’s front-end framework and
               handles state management using Redux. Node and Express were used
               to create the app’s backend and API. The app’s database was
-              created using PostgreSQL. Images are uploaded using an AWS S3
-              storage bucket.
+              created using PostgreSQL. Uploaded images are stored in a modular
+              AWS S3 bucket.
             </p>
           </div>
           <div className="details">
@@ -70,7 +71,7 @@ const HowTo = () => {
                 <span>Project Duration: </span>2 Weeks
               </p>
               <p>
-                <span>Role: </span>UI/UX, Front End, Back End
+                <span>Role: </span>Identity, UI/UX, Front & Back End
               </p>
             </div>
             <hr />
@@ -102,15 +103,11 @@ const HowTo = () => {
           </div>
         </div>
         <div className="project-design-container">
-          <div className="how-to-screens">
-            <img src={howToScreens} />
-          </div>
-          <h6>Design</h6>
+          <h6>UI Design</h6>
           <p>
-            The How-To app was designed with a mobile-first mentality. I first
-            optimized the UI for a small devices and worked my way up to bigger
-            screen sizes. My ultimate goal was to keep the design simple but
-            still visually interesting.
+            I designed How-To to work best on phone-sized devices and worked my
+            way up to bigger screen sizes. My ultimate goal was to keep the
+            design simple but still visually interesting.
           </p>
           <div className="colors-container">
             <div className="color how-to-green">

@@ -11,34 +11,9 @@ import floppy from "../assets/icons/floppy.svg"
 const Intro = () => {
   return (
     <div className="Intro-container">
-      <div className="earth">
-        <img src={earth} />
-      </div>
-      <div className="sparkles">
-        <img src={sparkles} />
-      </div>
-      <div className="bacon">
-        <img src={bacon} />
-      </div>
-      <div className="joystick">
-        <img src={joystick} />
-      </div>
-      <div className="em">
-        <img src={em} />
-      </div>
-      <div className="wrench">
-        <img src={wrench} />
-      </div>
-      <div className="snowboard">
-        <img src={snowboard} />
-      </div>
-      <div className="floppy">
-        <img src={floppy} />
-      </div>
       <div className="name-container">
-        <h3>Hey, I'm</h3>
         <h1>Mike VanSleen</h1>
-        <h3>Full Stack Web Developer</h3>
+        <h3>Full Stack Web Developer.</h3>
       </div>
     </div>
   )

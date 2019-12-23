@@ -9,7 +9,6 @@ import arrowLeft from "../assets/icons/arrow-left.svg"
 
 import replateFonts from "../images/replate-fonts.svg"
 import replateUIElements from "../images/replate-ui-elements.svg"
-import howToScreens from "../images/how-to-iphone-screens.svg"
 import designHubLogo from "../images/designhub-logo.svg"
 
 const HowTo = () => {
@@ -22,9 +21,24 @@ const HowTo = () => {
       <div className="project-description-container">
         <div className="project-intro-container">
           <div className="intro-text">
-            <h2>DesignHub</h2>
-            <h4>React.js Web App</h4>
-            <p>DesignHub was created to</p>
+            {/* <h2>DesignHub</h2>
+            <h4>React.js Web App</h4> */}
+            <p>
+              DesignHub is a professional design platform and asset management
+              system. After users create an account and personalize their
+              profile, they can upload designs and get feedback quickly.
+              Freelancers can use DesignHub to organize their projects and share
+              with clients, and teams can collaborate with each other on
+              multiple projects.
+              <br />
+              <br />
+              DesignHub’s front end is built with React and manages state with
+              Redux. Node and Express make up the back end and API of the app.
+              Users are authorized with Auth0 and can use existing accounts to
+              gain access to DesignHub. Images are uploaded to an AWS S3 bucket
+              and we used Twilio to send users messages and notifications about
+              their account.
+            </p>
           </div>
           <div className="details">
             <h5>Tech Stack</h5>
@@ -49,6 +63,9 @@ const HowTo = () => {
               </div>
               <div className="tech twilio">
                 <p>Twilio</p>
+              </div>
+              <div className="tech auth0">
+                <p>Auth0</p>
               </div>
             </div>
             <hr />
@@ -96,11 +113,13 @@ const HowTo = () => {
           </div>
         </div>
         <div className="project-design-container">
-          <h6>Design</h6>
+          <h6>UI Design</h6>
           <p>
-            The Replate app was designed to be simple and easy-to-use. I created
-            minimalistic UI elements and used some pre-made ANT Design elements
-            throughout the app.
+            The users experience is the main priority for the UI of this app.
+            Users can navigate the site quickly and without any guidance. It’s
+            easy to upload images with our drag-and-drop feature. Adding a dark
+            mode eases eye strain, while subtle user interactions give the app a
+            tactile feel.
           </p>
           <div className="colors-container">
             <div className="color designhub-black">
@@ -119,7 +138,7 @@ const HowTo = () => {
               <p>GRADIENT</p>
             </div>
           </div>
-          <div className="fonts-ui-container">
+          {/* <div className="fonts-ui-container">
             <div className="card fonts-container">
               <h6>Fonts</h6>
               <img src={replateFonts} />
@@ -128,7 +147,7 @@ const HowTo = () => {
               <h6>UI Elements</h6>
               <img src={replateUIElements} />
             </div>
-          </div>
+          </div> */}
 
           <div className="how-to-screens">
             <iframe
