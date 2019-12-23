@@ -22,8 +22,8 @@ const HowTo = () => {
       <div className="project-description-container">
         <div className="project-intro-container">
           <div className="intro-text">
-            <h2>Replate</h2>
-            <h4>React.js Web App</h4>
+            {/* <h2>Replate</h2>
+            <h4>React.js Web App</h4> */}
             <p>
               Replate is an app designed to help reduce food waste by making it
               easy to donate surplus food to people in need. Users are guided
@@ -100,7 +100,7 @@ const HowTo = () => {
           </div>
         </div>
         <div className="project-design-container">
-          <h6>Design</h6>
+          <h6>UI Design</h6>
           <p>
             The Replate app was designed to be simple and easy-to-use. I created
             minimalistic UI elements and used some pre-made ANT Design elements
