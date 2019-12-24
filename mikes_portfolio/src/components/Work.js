@@ -19,7 +19,9 @@ const Work = () => {
           </div>
           <div className="work-right">
             <div className="project-info">
-              <h2>How-To</h2>
+              <Link to="/how-to">
+                <h2>How-To</h2>
+              </Link>
               <p>
                 How-To is an app that makes it easy to browse and create
                 “how-to” guides.
@@ -34,7 +36,9 @@ const Work = () => {
         <div className="project-container reverse">
           <div className="work-right">
             <div className="project-info">
-              <h2>Replate</h2>
+              <Link to="/replate">
+                <h2>Replate</h2>
+              </Link>
               <p>
                 Replate is an app designed to help reduce food waste by making
                 it easy to donate surplus food to people in need.

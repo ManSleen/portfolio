@@ -156,7 +156,7 @@ const HowTo = () => {
               <img src={arrowLeft} />
             </div>
             <div>
-              <h4>Previous</h4>
+              <p>Previous</p>
               <h6>How-To</h6>
             </div>
           </div>
@@ -164,7 +164,7 @@ const HowTo = () => {
         <Link to="/designhub">
           <div className="next">
             <div>
-              <h4>Next</h4>
+              <p>Next</p>
               <h6>DesignHub</h6>
             </div>
             <div>

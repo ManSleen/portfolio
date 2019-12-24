@@ -26,7 +26,7 @@ const Sidebar = ({ scrollPosition, handleLinkClick }) => {
   return (
     <div className="nav-menu-container">
       <Menu
-        width={"110vw"}
+        width={"105vw"}
         right
         customCrossIcon={
           <FontAwesomeIcon size="3x" icon={faTimes} color="white" />
