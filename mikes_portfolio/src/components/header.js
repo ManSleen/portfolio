@@ -47,17 +47,26 @@ const Header = ({ siteTitle }) => {
           </Link>
         </div>
         <div className={`nav-links-container`}>
-          <a href="https://github.com/ManSleen" target="_blank">
+          <a
+            href="https://github.com/ManSleen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {/* <img className="svg" src={github} /> */}
             <GitHub color={`${scrollPosition > 860 ? "#0b0d0d" : "white"}`} />
           </a>
           <a
             href="https://www.linkedin.com/in/michael-vansleen/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <LinkedIn color={`${scrollPosition > 860 ? "#0b0d0d" : "white"}`} />
           </a>
-          <a href="https://twitter.com/man_sleen" target="_blank">
+          <a
+            href="https://twitter.com/man_sleen"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Twitter color={`${scrollPosition > 860 ? "#0b0d0d" : "white"}`} />
           </a>
           <Link onClick={e => handleLinkClick(e, "#about")} to={"/#about"}>

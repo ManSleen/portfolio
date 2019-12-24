@@ -1440,7 +1440,6 @@ p {
 
 #page-wrap {
   text-align: center;
-
   /* Prevent sidebar from showing a scrollbar on page */
   overflow: auto;
 }
@@ -1448,12 +1447,13 @@ p {
 /* Individual item */
 .bm-item {
   display: inline-block;
-
+  font-size: 2.5rem !important;
   /* Our sidebar item styling */
   text-decoration: none;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   color: #d1d1d1;
   transition: color 0.2s;
+  line-height: 100% !important;
   .menu-item {
     color: white;
   }
@@ -1482,11 +1482,11 @@ p {
 /* General sidebar styles */
 .bm-menu {
   background: #000000;
-  padding: 5em 1.5em 3rem;
+  padding: 5em 1.5em 0;
   font-size: 2rem;
   font-family: Roboto;
   color: white;
-  height: auto !important;
+  height: 100vh !important;
 }
 
 /* Wrapper for item list */
