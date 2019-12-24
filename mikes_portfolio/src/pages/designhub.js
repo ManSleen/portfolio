@@ -88,10 +88,15 @@ const HowTo = () => {
                 <a
                   href="https://github.com/ManSleen/designhub-fe"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img className="links-earth" src={earthBW} />
                 </a>
-                <a href="https://designhubx.com/" target="_blank">
+                <a
+                  href="https://designhubx.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <p>Live App</p>
                 </a>
               </div>
@@ -99,12 +104,14 @@ const HowTo = () => {
                 <a
                   href="https://github.com/lambda-replate/Lambda-Replate-FE"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <GitHub color="black" />
                 </a>
                 <a
                   href="https://github.com/lambda-replate/Lambda-Replate-FE"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <p>GitHub Repo</p>
                 </a>

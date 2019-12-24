@@ -35,23 +35,53 @@ const Sidebar = ({ scrollPosition, handleLinkClick }) => {
         isOpen={menuOpen}
         onStateChange={state => handleStateChange(state)}
       >
-        <a href="https://github.com/ManSleen" target="_blank">
+        <a
+          href="https://github.com/ManSleen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {/* <img className="svg" src={github} /> */}
           <GitHub color="white" />
         </a>
-        <a href="https://www.linkedin.com/in/michael-vansleen/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/michael-vansleen/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <LinkedIn color="white" />
         </a>
-        <a href="https://twitter.com/man_sleen" target="_blank">
+        <a
+          href="https://twitter.com/man_sleen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Twitter color="white" />
         </a>
-        <Link onClick={e => handleLinkClick(e, "#about")} to={"/#about"}>
+        <Link
+          onClick={e => {
+            handleLinkClick(e, "#about")
+            closeMenu()
+          }}
+          to={"/#about"}
+        >
           ABOUT
         </Link>
-        <Link onClick={e => handleLinkClick(e, "#work")} to={"/#work"}>
+        <Link
+          onClick={e => {
+            handleLinkClick(e, "#work")
+            closeMenu()
+          }}
+          to={"/#work"}
+        >
           WORK
         </Link>
-        <Link onClick={e => handleLinkClick(e, "#contact")} to={"/#contact"}>
+        <Link
+          onClick={e => {
+            handleLinkClick(e, "#contact")
+            closeMenu()
+          }}
+          to={"/#contact"}
+        >
           CONTACT
         </Link>
       </Menu>

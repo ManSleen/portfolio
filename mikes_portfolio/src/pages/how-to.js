@@ -78,10 +78,18 @@ const HowTo = () => {
             <div className="links-container">
               <h5>Links</h5>
               <div className="link">
-                <a href="https://howto-app.netlify.com/" target="_blank">
+                <a
+                  href="https://howto-app.netlify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img className="links-earth" src={earthBW} />
                 </a>
-                <a href="https://howto-app.netlify.com/" target="_blank">
+                <a
+                  href="https://howto-app.netlify.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <p>Live Demo</p>
                 </a>
               </div>
@@ -89,12 +97,14 @@ const HowTo = () => {
                 <a
                   href="https://github.com/ManSleen/How-To-Redesign-FE"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <GitHub color="black" />
                 </a>
                 <a
                   href="https://github.com/ManSleen/How-To-Redesign-FE"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <p>GitHub Repo</p>
                 </a>

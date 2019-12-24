@@ -18,7 +18,11 @@ const Contact = () => {
           </a>
         </div>
         <div className="contact-info-container">
-          <a href="mailto:mike.vansleen@gmail.com" target="_blank">
+          <a
+            href="mailto:mike.vansleen@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img className="message" src={message} />
             <p>mike.vansleen@gmail.com</p>
           </a>
