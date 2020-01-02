@@ -1203,7 +1203,14 @@ p {
           margin-bottom: 10px;
           svg {
             width: 25px;
+            height: auto;
             margin-right: 10px;
+          }
+          .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
           }
         }
         p {
