@@ -6,15 +6,15 @@ import earthBW from "../assets/icons/earth-bw.svg"
 import GitHub from "../assets/icons/GitHub.js"
 import arrowRight from "../assets/icons/arrow-right.svg"
 import arrowLeft from "../assets/icons/arrow-left.svg"
-
 import replateFonts from "../images/replate-fonts.svg"
 import replateUIElements from "../images/replate-ui-elements.svg"
-import howToScreens from "../images/how-to-iphone-screens.svg"
 import salad from "../images/salad.svg"
+import SEO from "../components/seo"
 
 const HowTo = () => {
   return (
     <>
+      <SEO title="Replate" />
       <Header />
       <div className="project-header replate-header">
         <h1>Replate</h1>
@@ -80,7 +80,7 @@ const HowTo = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="links-earth" src={earthBW} />
+                  <img alt="" className="links-earth" src={earthBW} />
                 </a>
                 <a
                   href="https://replate-app.netlify.com/"
@@ -133,19 +133,17 @@ const HowTo = () => {
           <div className="fonts-ui-container">
             <div className="card fonts-container">
               <h6>Fonts</h6>
-              <img src={replateFonts} />
+              <img alt="" src={replateFonts} />
             </div>
             <div className="card ui-container">
               <h6>UI Elements</h6>
-              <img src={replateUIElements} />
+              <img alt="" src={replateUIElements} />
             </div>
           </div>
 
-          <div className="how-to-screens">
-            {/* <img src={howToScreens} /> */}
-          </div>
+          <div className="how-to-screens"></div>
           <div className="project-logo-container">
-            <img src={salad} />
+            <img alt="" src={salad} />
           </div>
         </div>
       </div>
@@ -153,7 +151,7 @@ const HowTo = () => {
         <Link to="/how-to">
           <div className="previous">
             <div>
-              <img src={arrowLeft} />
+              <im alt="" g src={arrowLeft} />
             </div>
             <div>
               <p>Previous</p>
@@ -168,7 +166,7 @@ const HowTo = () => {
               <h6>DesignHub</h6>
             </div>
             <div>
-              <img src={arrowRight} />
+              <img alt="" src={arrowRight} />
             </div>
           </div>
         </Link>

@@ -8,12 +8,12 @@ const Contact = () => {
     <>
       <a className="contact-anchor" id="contact"></a>
       <div className="contact-container">
-        <img src={phone} />
+        <img alt="" src={phone} />
         <h2>Contact</h2>
         <p>Reach me by phone, email or carrier pigeon.</p>
         <div className="contact-info-container">
           <a href="tel:1-786-286-8944">
-            <img className="phone" src={contactPhone} />
+            <img alt="" className="phone" src={contactPhone} />
             <p>(786) 286-8944</p>
           </a>
         </div>
@@ -23,7 +23,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="message" src={message} />
+            <img alt="" className="message" src={message} />
             <p>mike.vansleen@gmail.com</p>
           </a>
         </div>

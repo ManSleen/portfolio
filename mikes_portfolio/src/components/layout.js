@@ -16,6 +16,7 @@ import AboutMe from "./AboutMe"
 import RecentWork from "./RecentWork"
 import Work from "./Work"
 import Contact from "./Contact"
+import SEO from "../components/seo"
 
 const Layout = ({ children }) => {
   useEffect(() => {
@@ -33,10 +34,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <SEO title="Home" />
+
       <Header siteTitle={data.site.siteMetadata.title} />
       <Intro />
-      <div className="drips-container"></div>
-
+      <div className="drips-container" />
       <AboutMe />
       <RecentWork />
       <Work />

@@ -6,15 +6,15 @@ import earthBW from "../assets/icons/earth-bw.svg"
 import GitHub from "../assets/icons/GitHub.js"
 import arrowRight from "../assets/icons/arrow-right.svg"
 import arrowLeft from "../assets/icons/arrow-left.svg"
-
 import howToFonts from "../images/roboto.svg"
 import howToUIElements from "../images/how-to-ui-elements.svg"
-import howToScreens from "../images/how-to-iphone-screens.svg"
 import hammerWrench from "../images/hammer-wrench.svg"
+import SEO from "../components/seo"
 
 const HowTo = () => {
   return (
     <>
+      <SEO title="How-To" />
       <Header />
       <div className="project-header how-to-header">
         <h1>How-To</h1>
@@ -83,7 +83,7 @@ const HowTo = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="links-earth" src={earthBW} />
+                  <img alt="" className="links-earth" src={earthBW} />
                 </a>
                 <a
                   href="https://howto-app.netlify.com/"
@@ -142,16 +142,17 @@ const HowTo = () => {
           <div className="fonts-ui-container">
             <div className="card fonts-container">
               <h6>Fonts</h6>
-              <img src={howToFonts} />
+              <img alt="" src={howToFonts} />
             </div>
             <div className="card ui-container">
               <h6>UI Elements</h6>
-              <img src={howToUIElements} />
+              <img alt="" src={howToUIElements} />
             </div>
           </div>
           <div className="prototype-container">
             <h6>Prototype</h6>
             <iframe
+              title="How-To Figma Prototype"
               height="600"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FH2RlU96r30K3HM0cC4ETMw%2FHow-To-UI-Design%3Fnode-id%3D23%253A1115%26viewport%3D-397%252C139%252C1.008410096168518%26scaling%3Dscale-down"
               allowFullScreen
@@ -159,7 +160,7 @@ const HowTo = () => {
           </div>
 
           <div className="project-logo-container">
-            <img src={hammerWrench} />
+            <img alt="" src={hammerWrench} />
           </div>
         </div>
       </div>
@@ -167,7 +168,7 @@ const HowTo = () => {
         <Link to="/replate">
           <div className="previous">
             <div>
-              <img src={arrowLeft} />
+              <img alt="" src={arrowLeft} />
             </div>
             <div>
               <p>Previous</p>
@@ -182,7 +183,7 @@ const HowTo = () => {
               <h6>Replate</h6>
             </div>
             <div>
-              <img src={arrowRight} />
+              <img alt="" src={arrowRight} />
             </div>
           </div>
         </Link>
