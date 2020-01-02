@@ -4,6 +4,7 @@ import Header from "../components/header"
 
 import earthBW from "../assets/icons/earth-bw.svg"
 import GitHub from "../assets/icons/GitHub.js"
+import Youtube from "../assets/icons/Youtube.js"
 import arrowRight from "../assets/icons/arrow-right.svg"
 import arrowLeft from "../assets/icons/arrow-left.svg"
 
@@ -90,7 +91,9 @@ const HowTo = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img className="links-earth" src={earthBW} />
+                  <div className="icon">
+                    <img className="links-earth" src={earthBW} />
+                  </div>
                 </a>
                 <a
                   href="https://designhubx.com/"
@@ -106,7 +109,9 @@ const HowTo = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <GitHub color="black" />
+                  <div className="icon">
+                    <GitHub color="black" />
+                  </div>
                 </a>
                 <a
                   href="https://github.com/lambda-replate/Lambda-Replate-FE"
@@ -114,6 +119,25 @@ const HowTo = () => {
                   rel="noopener noreferrer"
                 >
                   <p>GitHub Repo</p>
+                </a>
+              </div>
+              <div className="link">
+                <a
+                  href="https://youtu.be/PTBgNKuqSsY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="icon">
+                    <Youtube />
+                  </div>
+                </a>
+
+                <a
+                  href="https://youtu.be/PTBgNKuqSsY"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p>Video Overview</p>
                 </a>
               </div>
             </div>
