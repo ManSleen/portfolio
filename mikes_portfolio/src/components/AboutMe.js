@@ -12,7 +12,7 @@ const AboutMe = () => {
       <a className="about-anchor" id="about"></a>
       <div className="about-me-container">
         <div className="about-me-info">
-          <img className="thumbs-up" src={thumbsUp} />
+          <img alt="" className="thumbs-up" src={thumbsUp} />
           <h2>About Me</h2>
           <p>
             I develop the web and I love hot sauce. Call me weird, but I've
@@ -23,14 +23,14 @@ const AboutMe = () => {
             to get real weird.
           </p>
           <div className="web-tech-container">
-            <img className="web-tech" src={html5} />
-            <img className="web-tech" src={javascript} />
-            <img className="web-tech" src={react} />
-            <img className="web-tech" src={css3} />
+            <img alt="" className="web-tech" src={html5} />
+            <img alt="" className="web-tech" src={javascript} />
+            <img alt="" className="web-tech" src={react} />
+            <img alt="" className="web-tech" src={css3} />
           </div>
         </div>
         <div className="about-me-image">
-          <img src={srirachaMike} />
+          <img alt="" src={srirachaMike} />
         </div>
       </div>
     </>
