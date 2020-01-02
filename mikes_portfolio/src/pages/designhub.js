@@ -7,14 +7,13 @@ import GitHub from "../assets/icons/GitHub.js"
 import Youtube from "../assets/icons/Youtube.js"
 import arrowRight from "../assets/icons/arrow-right.svg"
 import arrowLeft from "../assets/icons/arrow-left.svg"
-
-import replateFonts from "../images/replate-fonts.svg"
-import replateUIElements from "../images/replate-ui-elements.svg"
 import designHubLogo from "../images/designhub-logo.svg"
+import SEO from "../components/seo"
 
 const HowTo = () => {
   return (
     <>
+      <SEO title="DesignHub" />
       <Header />
       <div className="project-header designhub-header ">
         <h1>DesignHub</h1>
@@ -92,7 +91,7 @@ const HowTo = () => {
                   rel="noopener noreferrer"
                 >
                   <div className="icon">
-                    <img className="links-earth" src={earthBW} />
+                    <img alt="" className="links-earth" src={earthBW} />
                   </div>
                 </a>
                 <a
@@ -169,19 +168,10 @@ const HowTo = () => {
               <p>GRADIENT</p>
             </div>
           </div>
-          {/* <div className="fonts-ui-container">
-            <div className="card fonts-container">
-              <h6>Fonts</h6>
-              <img src={replateFonts} />
-            </div>
-            <div className="card ui-container">
-              <h6>UI Elements</h6>
-              <img src={replateUIElements} />
-            </div>
-          </div> */}
 
           <div className="how-to-screens">
             <iframe
+              title="DesignHub Video Overview"
               width="1280"
               height="720"
               src="https://www.youtube.com/embed/PTBgNKuqSsY"
@@ -191,7 +181,7 @@ const HowTo = () => {
             ></iframe>
           </div>
           <div className="project-logo-container">
-            <img src={designHubLogo} />
+            <img alt="" src={designHubLogo} />
           </div>
         </div>
       </div>
@@ -199,7 +189,7 @@ const HowTo = () => {
         <Link to="/replate">
           <div className="previous">
             <div>
-              <img src={arrowLeft} />
+              <img alt="" src={arrowLeft} />
             </div>
             <div>
               <p>Previous</p>
@@ -214,7 +204,7 @@ const HowTo = () => {
               <h6>How-To</h6>
             </div>
             <div>
-              <img src={arrowRight} />
+              <img alt="" src={arrowRight} />
             </div>
           </div>
         </Link>
