@@ -151,7 +151,7 @@ const HowTo = () => {
         <Link to="/how-to">
           <div className="previous">
             <div>
-              <im alt="" g src={arrowLeft} />
+              <img alt="" src={arrowLeft} />
             </div>
             <div>
               <p>Previous</p>
