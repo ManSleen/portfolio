@@ -4,6 +4,9 @@ import html5 from "../assets/icons/html5.svg"
 import javascript from "../assets/icons/javascript.svg"
 import react from "../assets/icons/react.svg"
 import css3 from "../assets/icons/css3.svg"
+import python from "../assets/icons/python.svg"
+import node from "../assets/icons/node.svg"
+import figma from "../assets/icons/figma.svg"
 import srirachaMike from "../images/srirachaMike.svg"
 
 const AboutMe = () => {
@@ -27,6 +30,9 @@ const AboutMe = () => {
             <img alt="" className="web-tech" src={javascript} />
             <img alt="" className="web-tech" src={react} />
             <img alt="" className="web-tech" src={css3} />
+            <img alt="" className="web-tech" src={python} />
+            <img alt="" className="web-tech" src={node} />
+            <img alt="" className="web-tech" src={figma} />
           </div>
         </div>
         <div className="about-me-image">
