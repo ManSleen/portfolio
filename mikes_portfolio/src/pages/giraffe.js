@@ -13,10 +13,10 @@ import SEO from "../components/seo"
 const HowTo = () => {
   return (
     <>
-      <SEO title="DesignHub" />
+      <SEO title="Giraffe" />
       <Header />
-      <div className="project-header designhub-header ">
-        <h1>DesignHub</h1>
+      <div className="project-header giraffe-header ">
+        <h1>Giraffe</h1>
       </div>
       <div className="project-description-container">
         <div className="project-intro-container">
@@ -24,61 +24,57 @@ const HowTo = () => {
             {/* <h2>DesignHub</h2>
             <h4>React.js Web App</h4> */}
             <p>
-              DesignHub is a professional design platform and asset management
-              system. After users create an account and personalize their
-              profile, they can upload designs and get feedback from other users
-              quickly. Freelancers can use DesignHub to organize their projects
-              and share with clients, and teams can collaborate with each other
-              on multiple projects.
+              Giraffe is a serverless B2B SaaS application designed to help
+              people find the help they need at work and allows businesses to
+              keep track of employees' ever-changing skills and capabilities.
+              Organizations are able to create a "Workspace" through a guided
+              setup process.
               <br />
               <br />
-              We built DesignHub’s front-end with React and used Redux as our
-              state management solution. Node and Express make up the back-end
-              and API of the app. Users are authenticated with Auth0 and can use
-              their existing accounts (like Gmail) to gain access to DesignHub.
-              Images are uploaded to an AWS S3 bucket and we used Twilio to send
-              users messages and notifications about their account.
+              DesignHub’s front end is built with React and manages state with
+              Redux. Node and Express make up the back end and API of the app.
+              Users are authorized with Auth0 and can use existing accounts to
+              gain access to DesignHub. Images are uploaded to an AWS S3 bucket
+              and we used Twilio to send users messages and notifications about
+              their account.
             </p>
           </div>
           <div className="details">
             <h5>Tech Stack</h5>
             <div className="tech-stack-container">
               <div className="tech react">
-                <p>React.js</p>
-              </div>
-              <div className="tech redux">
-                <p>Redux.js</p>
+                <p>React.js w/ Hooks</p>
               </div>
               <div className="tech node">
                 <p>Node.js</p>
               </div>
-              <div className="tech postgres">
-                <p>PostgreSQL</p>
-              </div>
-              <div className="tech express">
-                <p>Express</p>
+              <div className="tech aws-amplify">
+                <p>AWS Amplify</p>
               </div>
               <div className="tech aws-s3">
                 <p>AWS S3</p>
               </div>
-              <div className="tech twilio">
-                <p>Twilio</p>
+              <div className="tech aws-dynamodb">
+                <p>AWS DynamoDB</p>
               </div>
-              <div className="tech auth0">
-                <p>Auth0</p>
+              <div className="tech aws-cognito">
+                <p>AWS Cognito</p>
+              </div>
+              <div className="tech aws-lambda">
+                <p>AWS Lambda</p>
               </div>
             </div>
             <hr />
             <div className="project-details-container">
               <h5>Details</h5>
               <p>
-                <span>Completed: </span>Nov 2019
+                <span>Completed: </span>Oct 2020
               </p>
               <p>
-                <span>Project Duration: </span>8 Weeks
+                <span>Project Duration: </span>8 Months
               </p>
               <p>
-                <span>Role: </span>Front End, Back End
+                <span>Role: </span>Frontend, Backend, DevOps
               </p>
             </div>
             <hr />

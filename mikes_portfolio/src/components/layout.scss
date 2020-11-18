@@ -1104,6 +1104,18 @@ p {
   background-position: center center;
 }
 
+.giraffe-header {
+  background: linear-gradient(
+      180deg,
+      rgba(26, 26, 26, 0.85) 10%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    no-repeat url("../images/giraffe-cover.png");
+
+  background-size: cover;
+  background-position: center center;
+}
+
 .project-description-container {
   margin: 120px auto;
   width: 75%;
@@ -1258,14 +1270,26 @@ p {
       .express {
         background: #272727;
       }
-      .aws {
-        background: #ff9900;
-      }
       .twilio {
         background: #f22f46;
       }
       .auth0 {
         background: #eb5424;
+      }
+      .aws-s3 {
+        background: #e0493d;
+      }
+      .aws-amplify {
+        background: #ffa525;
+      }
+      .aws-dynamodb {
+        background: #408ac8;
+      }
+      .aws-cognito {
+        background: #b66c91;
+      }
+      .aws-lambda {
+        background: #ff731c;
       }
     }
   }
