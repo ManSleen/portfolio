@@ -1,14 +1,39 @@
 import React from "react"
 import { Link } from "gatsby"
 import Header from "../components/header"
+import styled from "styled-components"
 
 import earthBW from "../assets/icons/earth-bw.svg"
 import GitHub from "../assets/icons/GitHub.js"
 import Youtube from "../assets/icons/Youtube.js"
 import arrowRight from "../assets/icons/arrow-right.svg"
 import arrowLeft from "../assets/icons/arrow-left.svg"
-import designHubLogo from "../images/designhub-logo.svg"
+import giraffeLogo from "../images/giraffe_fullLogo_goldBlue copy.png"
 import SEO from "../components/seo"
+
+import gatherPeopleDataVideo from "../videos/1-gather-people-data.mp4"
+import problemSolveVideo from "../videos/2-problem-solve.mp4"
+
+const GiraffeLogo = styled.img`
+  width: 300px;
+`
+const VideoContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+`
+
+const FeatureVideo = styled.video`
+  width: 80%;
+  margin: 0 auto;
+  filter: drop-shadow(0px 0px 40px rgba(0, 0, 0, 0.3));
+  border-radius: 5px;
+  @media screen and (max-width: 900px) {
+    margin-bottom: 80px;
+  }
+`
 
 const HowTo = () => {
   return (
@@ -28,15 +53,20 @@ const HowTo = () => {
               people find the help they need at work and allows businesses to
               keep track of employees' ever-changing skills and capabilities.
               Organizations are able to create a "Workspace" through a guided
-              setup process.
+              setup process. Users can then join workspaces and start adding
+              skills to their profile. Other users can search the database for
+              skills and get connected with other users, either through the
+              online app or our integrated Slack app.
               <br />
               <br />
-              DesignHub’s front end is built with React and manages state with
-              Redux. Node and Express make up the back end and API of the app.
-              Users are authorized with Auth0 and can use existing accounts to
-              gain access to DesignHub. Images are uploaded to an AWS S3 bucket
-              and we used Twilio to send users messages and notifications about
-              their account.
+              Giraffe’s frontend is built with React and custom Material UI
+              components. State is managed with the Context API. The app's
+              backend is built using a combination of AWS Lambda functions, a
+              GraphQL API and uses a DynamoDB database as the data layer.
+              <br />
+              <br />
+              User authentication is handled with Cognito. Static assets are
+              stored in S3 buckets.
             </p>
           </div>
           <div className="details">
@@ -63,6 +93,12 @@ const HowTo = () => {
               <div className="tech aws-lambda">
                 <p>AWS Lambda</p>
               </div>
+              <div className="tech material-ui">
+                <p>Material UI</p>
+              </div>
+              <div className="tech graphql">
+                <p>GraphQL</p>
+              </div>
             </div>
             <hr />
             <div className="project-details-container">
@@ -82,7 +118,7 @@ const HowTo = () => {
               <h5>Links</h5>
               <div className="link">
                 <a
-                  href="https://github.com/ManSleen/designhub-fe"
+                  href="https://app.getgiraffe.io"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -91,7 +127,7 @@ const HowTo = () => {
                   </div>
                 </a>
                 <a
-                  href="https://designhubx.com/"
+                  href="https://app.getgiraffe.io"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -116,25 +152,6 @@ const HowTo = () => {
                   <p>GitHub Repo</p>
                 </a>
               </div>
-              <div className="link">
-                <a
-                  href="https://youtu.be/PTBgNKuqSsY"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="icon">
-                    <Youtube />
-                  </div>
-                </a>
-
-                <a
-                  href="https://youtu.be/PTBgNKuqSsY"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p>Video Overview</p>
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -148,48 +165,49 @@ const HowTo = () => {
             tactile feel.
           </p>
           <div className="colors-container">
-            <div className="color designhub-black">
-              <p>#15161A</p>
+            <div className="color giraffe-blue">
+              <p>#0A4B90</p>
             </div>
-            <div className="color designhub-grey ">
-              <p>#6D6D72</p>
+            <div className="color giraffe-yellow ">
+              <p>#F9BC15</p>
             </div>
-            <div className="color designhub-blue">
-              <p>#5557FE</p>
+            <div className="color giraffe-light-blue">
+              <p>#6BB6E7</p>
             </div>
-            <div className="color designhub-purple">
-              <p>#9555FE</p>
+            <div className="color giraffe-green">
+              <p>#1EB980</p>
             </div>
-            <div className="color designhub-gradient">
-              <p>GRADIENT</p>
+            <div className="color giraffe-red">
+              <p>#B00020</p>
             </div>
           </div>
 
           <div className="how-to-screens">
-            <iframe
-              title="DesignHub Video Overview"
-              width="1280"
-              height="720"
-              src="https://www.youtube.com/embed/PTBgNKuqSsY"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <VideoContainer>
+              <FeatureVideo autoPlay muted loop playsInline preLoad="metadata">
+                <source src={gatherPeopleDataVideo} type="video/mp4" />
+              </FeatureVideo>
+              <br />
+              <br />
+              <FeatureVideo autoPlay muted loop playsInline preLoad="metadata">
+                <source src={problemSolveVideo} type="video/mp4" />
+              </FeatureVideo>
+            </VideoContainer>
           </div>
           <div className="project-logo-container">
-            <img alt="" src={designHubLogo} />
+            <GiraffeLogo alt="" src={giraffeLogo} />
           </div>
         </div>
       </div>
       <div className="previous-next">
-        <Link to="/replate">
+        <Link to="/designhub">
           <div className="previous">
             <div>
               <img alt="" src={arrowLeft} />
             </div>
             <div>
               <p>Previous</p>
-              <h6>Replate</h6>
+              <h6>DesignHub</h6>
             </div>
           </div>
         </Link>

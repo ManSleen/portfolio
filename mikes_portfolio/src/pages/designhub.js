@@ -84,27 +84,10 @@ const HowTo = () => {
             <hr />
             <div className="links-container">
               <h5>Links</h5>
+
               <div className="link">
                 <a
                   href="https://github.com/ManSleen/designhub-fe"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="icon">
-                    <img alt="" className="links-earth" src={earthBW} />
-                  </div>
-                </a>
-                <a
-                  href="https://designhubx.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p>Live App</p>
-                </a>
-              </div>
-              <div className="link">
-                <a
-                  href="https://github.com/lambda-replate/Lambda-Replate-FE"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -113,7 +96,7 @@ const HowTo = () => {
                   </div>
                 </a>
                 <a
-                  href="https://github.com/lambda-replate/Lambda-Replate-FE"
+                  href="https://github.com/ManSleen/designhub-fe"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -197,11 +180,11 @@ const HowTo = () => {
             </div>
           </div>
         </Link>
-        <Link to="/how-to">
+        <Link to="/giraffe">
           <div className="next">
             <div>
               <p>Next</p>
-              <h6>How-To</h6>
+              <h6>Giraffe</h6>
             </div>
             <div>
               <img alt="" src={arrowRight} />
