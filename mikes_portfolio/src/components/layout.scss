@@ -728,7 +728,7 @@ p {
       flex-flow: row wrap;
       justify-content: space-between;
       align-items: center;
-      width: 80%;
+      width: 100%;
       @media screen and (max-width: 1000px) {
         margin: 0 auto;
         width: 60%;
@@ -736,6 +736,10 @@ p {
           margin: 10px 0;
         }
       }
+    }
+    .aws {
+      width: 52px;
+      height: 52px;
     }
     .web-tech {
       // margin-right: 40px;

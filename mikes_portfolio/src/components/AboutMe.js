@@ -7,6 +7,7 @@ import css3 from "../assets/icons/css3.svg"
 import python from "../assets/icons/python.svg"
 import node from "../assets/icons/node.svg"
 import figma from "../assets/icons/figma.svg"
+import aws from "../assets/icons/aws-logo-1.png"
 import srirachaMike from "../images/srirachaMike.svg"
 
 const AboutMe = () => {
@@ -33,6 +34,7 @@ const AboutMe = () => {
             <img alt="" className="web-tech" src={python} />
             <img alt="" className="web-tech" src={node} />
             <img alt="" className="web-tech" src={figma} />
+            <img alt="" className="web-tech aws" src={aws} />
           </div>
         </div>
         <div className="about-me-image">
