@@ -156,13 +156,11 @@ const HowTo = () => {
           </div>
         </div>
         <div className="project-design-container">
-          <h6>UI Design</h6>
+          <h6>UX/UI Design</h6>
           <p>
-            The users experience is the main priority for the UI of this app.
-            Users can navigate the site quickly and without any guidance. It’s
-            easy to upload images with our drag-and-drop feature. Adding a dark
-            mode eases eye strain, while subtle user interactions give the app a
-            tactile feel.
+            I created the initial library of UI components and color palette for
+            the app and employed UX best practices to create a usable and
+            easy-to-navigate online experience.
           </p>
           <div className="colors-container">
             <div className="color giraffe-blue">
