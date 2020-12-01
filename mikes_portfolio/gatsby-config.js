@@ -5,7 +5,7 @@ module.exports = {
     author: `@ManSleen`,
   },
   plugins: [
-    // `gatsby-plugin-favicon`,
+    `gatsby-plugin-favicon`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        // name: `mike-vansleens-portfolio`,
+        name: `mike-vansleens-portfolio`,
         short_name: `portfolio`,
         start_url: `/`,
         background_color: `#663399`,
