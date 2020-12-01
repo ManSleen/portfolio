@@ -50,8 +50,5 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "resolutions": {
-    "gatsby-plugin-favicon/favicons-webpack-plugin/favicons/sharp": "0.23.1"
   }
 }
