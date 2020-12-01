@@ -1,9 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import howToCover from "../images/how-to-cover.png"
 import replateCover from "../images/replate-cover.png"
 import designHubCover from "../images/designhub-cover.png"
+import giraffeCover from "../images/giraffe-cover.png"
+// import giraffeCover from '../images/giraffe-cover-2.png'
 import rightArrow from "../assets/icons/right-arrow.svg"
 
 const Work = () => {
@@ -11,6 +14,30 @@ const Work = () => {
     <>
       <a className="work-anchor" id="work"></a>
       <div className="work-container">
+        <div className="project-container reverse">
+          <div className="work-right">
+            <div className="project-info">
+              <Link to="/giraffe">
+                <h2>Giraffe</h2>
+              </Link>
+              <p>
+                Giraffe is a serverless B2B SaaS application designed to help
+                people find the help they need at work and allows businesses to
+                keep track of employees' ever-changing skills and capabilities.
+              </p>
+              <div className="more-info">
+                <Link to="/giraffe">MORE INFO</Link>
+                <img alt="" src={rightArrow} />
+              </div>
+            </div>
+          </div>
+          <div className="work-left">
+            <Link to="/giraffe">
+              <img alt="" src={giraffeCover} />
+            </Link>
+          </div>
+        </div>
+
         <div className="project-container">
           <div className="work-left">
             <Link to="/designhub">

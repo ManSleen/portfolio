@@ -728,7 +728,7 @@ p {
       flex-flow: row wrap;
       justify-content: space-between;
       align-items: center;
-      width: 80%;
+      width: 100%;
       @media screen and (max-width: 1000px) {
         margin: 0 auto;
         width: 60%;
@@ -736,6 +736,10 @@ p {
           margin: 10px 0;
         }
       }
+    }
+    .aws {
+      width: 52px;
+      height: 52px;
     }
     .web-tech {
       // margin-right: 40px;
@@ -1104,6 +1108,18 @@ p {
   background-position: center center;
 }
 
+.giraffe-header {
+  background: linear-gradient(
+      180deg,
+      rgba(26, 26, 26, 0.85) 10%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    no-repeat url("../images/giraffe-cover.png");
+
+  background-size: cover;
+  background-position: center center;
+}
+
 .project-description-container {
   margin: 120px auto;
   width: 75%;
@@ -1258,14 +1274,32 @@ p {
       .express {
         background: #272727;
       }
-      .aws {
-        background: #ff9900;
-      }
       .twilio {
         background: #f22f46;
       }
       .auth0 {
         background: #eb5424;
+      }
+      .aws-s3 {
+        background: #e0493d;
+      }
+      .aws-amplify {
+        background: #ffa525;
+      }
+      .aws-dynamodb {
+        background: #408ac8;
+      }
+      .aws-cognito {
+        background: #b66c91;
+      }
+      .aws-lambda {
+        background: #ff731c;
+      }
+      .material-ui {
+        background: #118aed;
+      }
+      .graphql {
+        background: #e1008b;
       }
     }
   }
@@ -1351,6 +1385,21 @@ p {
       }
       .designhub-gradient {
         background: linear-gradient(91.72deg, #5557fe -2.36%, #9555fe 103.67%);
+      }
+      .giraffe-blue {
+        background: #0a4b90;
+      }
+      .giraffe-light-blue {
+        background: #6bb6e7;
+      }
+      .giraffe-yellow {
+        background: #f9bc15;
+      }
+      .giraffe-green {
+        background: #1eb980;
+      }
+      .giraffe-red {
+        background: #b00020;
       }
     }
     .fonts-ui-container {

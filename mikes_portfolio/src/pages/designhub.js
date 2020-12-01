@@ -26,31 +26,31 @@ const HowTo = () => {
             <p>
               DesignHub is a professional design platform and asset management
               system. After users create an account and personalize their
-              profile, they can upload designs and get feedback quickly.
-              Freelancers can use DesignHub to organize their projects and share
-              with clients, and teams can collaborate with each other on
-              multiple projects.
+              profile, they can upload designs and get feedback from other users
+              quickly. Freelancers can use DesignHub to organize their projects
+              and share with clients, and teams can collaborate with each other
+              on multiple projects.
               <br />
               <br />
-              DesignHub’s front end is built with React and manages state with
-              Redux. Node and Express make up the back end and API of the app.
-              Users are authorized with Auth0 and can use existing accounts to
-              gain access to DesignHub. Images are uploaded to an AWS S3 bucket
-              and we used Twilio to send users messages and notifications about
-              their account.
+              We built DesignHub’s front-end with React and used Redux as our
+              state management solution. Node and Express make up the back-end
+              and API of the app. Users are authenticated with Auth0 and can use
+              their existing accounts (like Gmail) to gain access to DesignHub.
+              Images are uploaded to an AWS S3 bucket and we used Twilio to send
+              users messages and notifications about their account.
             </p>
           </div>
           <div className="details">
             <h5>Tech Stack</h5>
             <div className="tech-stack-container">
               <div className="tech react">
-                <p>React</p>
+                <p>React.js</p>
               </div>
               <div className="tech redux">
-                <p>Redux</p>
+                <p>Redux.js</p>
               </div>
               <div className="tech node">
-                <p>Node</p>
+                <p>Node.js</p>
               </div>
               <div className="tech postgres">
                 <p>PostgreSQL</p>
@@ -58,7 +58,7 @@ const HowTo = () => {
               <div className="tech express">
                 <p>Express</p>
               </div>
-              <div className="tech aws">
+              <div className="tech aws-s3">
                 <p>AWS S3</p>
               </div>
               <div className="tech twilio">
@@ -84,27 +84,10 @@ const HowTo = () => {
             <hr />
             <div className="links-container">
               <h5>Links</h5>
+
               <div className="link">
                 <a
                   href="https://github.com/ManSleen/designhub-fe"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="icon">
-                    <img alt="" className="links-earth" src={earthBW} />
-                  </div>
-                </a>
-                <a
-                  href="https://designhubx.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <p>Live App</p>
-                </a>
-              </div>
-              <div className="link">
-                <a
-                  href="https://github.com/lambda-replate/Lambda-Replate-FE"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -113,7 +96,7 @@ const HowTo = () => {
                   </div>
                 </a>
                 <a
-                  href="https://github.com/lambda-replate/Lambda-Replate-FE"
+                  href="https://github.com/ManSleen/designhub-fe"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -197,11 +180,11 @@ const HowTo = () => {
             </div>
           </div>
         </Link>
-        <Link to="/how-to">
+        <Link to="/giraffe">
           <div className="next">
             <div>
               <p>Next</p>
-              <h6>How-To</h6>
+              <h6>Giraffe</h6>
             </div>
             <div>
               <img alt="" src={arrowRight} />

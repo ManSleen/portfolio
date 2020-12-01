@@ -7,6 +7,7 @@ import css3 from "../assets/icons/css3.svg"
 import python from "../assets/icons/python.svg"
 import node from "../assets/icons/node.svg"
 import figma from "../assets/icons/figma.svg"
+import aws from "../assets/icons/aws-logo-1.png"
 import srirachaMike from "../images/srirachaMike.svg"
 
 const AboutMe = () => {
@@ -18,12 +19,13 @@ const AboutMe = () => {
           <img alt="" className="thumbs-up" src={thumbsUp} />
           <h2>About Me</h2>
           <p>
-            I develop the web and I love hot sauce. Call me weird, but I've
-            always enjoyed getting down with technology. As a kid I tore apart
-            the family computer and made plain HTML websites with Notepad. Now,
-            as an <span> adult </span>
-            slightly larger kid, I'm finding the web is the perfect place for me
-            to get real weird.
+            Hello world! I develop the web and I love hot sauce. I started my
+            journey into tech by tearing apart the family PC and making plain
+            HTML websites in Notepad. Dad was so proud. Since then I’ve been
+            filled with an endless curiosity about the interwebs and how it all
+            works. Now I get to be a part of the magic. My passion is creating
+            beautiful, accessible, human-centered products. Let’s work on
+            something awesome together!
           </p>
           <div className="web-tech-container">
             <img alt="" className="web-tech" src={html5} />
@@ -33,6 +35,7 @@ const AboutMe = () => {
             <img alt="" className="web-tech" src={python} />
             <img alt="" className="web-tech" src={node} />
             <img alt="" className="web-tech" src={figma} />
+            <img alt="" className="web-tech aws" src={aws} />
           </div>
         </div>
         <div className="about-me-image">

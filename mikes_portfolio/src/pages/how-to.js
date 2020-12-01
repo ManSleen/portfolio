@@ -43,13 +43,13 @@ const HowTo = () => {
             <h5>Tech Stack</h5>
             <div className="tech-stack-container">
               <div className="tech react">
-                <p>React</p>
+                <p>React.js</p>
               </div>
               <div className="tech redux">
-                <p>Redux</p>
+                <p>Redux.js</p>
               </div>
               <div className="tech node">
-                <p>Node</p>
+                <p>Node.js</p>
               </div>
               <div className="tech postgres">
                 <p>PostgreSQL</p>
@@ -57,7 +57,7 @@ const HowTo = () => {
               <div className="tech express">
                 <p>Express</p>
               </div>
-              <div className="tech aws">
+              <div className="tech aws-s3">
                 <p>AWS S3</p>
               </div>
             </div>
